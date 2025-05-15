@@ -47,7 +47,7 @@ pnpm build
 pnpm preview
 ```
 
-这将启动一个静态文件服务器，用于预览打包后的文件。服务器会在 [http://localhost:5000](http://localhost:5000) 上运行，与开发服务器的端口 3000 进行区分。
+这将启动一个静态文件服务器，用于预览打包后的文件。服务器会在 [http://localhost:9000](http://localhost:9000) 上运行，与开发服务器的端口 3000 进行区分。
 
 > **注意**：在运行 `pnpm preview` 之前，请确保已经运行过 `pnpm build` 命令生成了 `dist` 目录。
 
