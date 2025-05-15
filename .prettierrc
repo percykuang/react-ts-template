@@ -1,0 +1,23 @@
+{
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSameLine": false,
+  "endOfLine": "auto",
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^react$",
+    "^react-dom$",
+    "^react",
+    "^[a-zA-Z0-9-]+$",
+    "^@[a-zA-Z0-9-]+/[a-zA-Z0-9-]+$",
+    "^@/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderGroupNamespaceSpecifiers": true,
+  "importOrderCaseInsensitive": true
+}
