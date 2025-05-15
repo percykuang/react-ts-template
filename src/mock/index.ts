@@ -5,7 +5,7 @@ import { axiosInstance } from '@/http';
 // 创建一个MockAdapter实例，any 是为了解决类型不兼容
 const mock = new MockAdapter(axiosInstance as any, { delayResponse: 1000 });
 
-mock.onGet('/api/dashboard/books').reply(() => [
+mock.onGet('/dashboard/books').reply(() => [
   200,
   {
     code: 0,

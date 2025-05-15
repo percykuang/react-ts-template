@@ -4,8 +4,8 @@ import axiosInstance from './axiosInstance';
 
 // 在开发环境中，导入mock模块
 if (process.env.NODE_ENV !== 'production') {
-  // 动态导入mock模块
-  import('../mock');
+  // 这里不能使用 import 动态导入，会有延迟问题，导致第一次进入页面时，请求接口失败
+  require('../mock');
 }
 
 // 请求方法类型

@@ -272,7 +272,7 @@ import { axiosInstance } from '@/http';
 
 const mock = new MockAdapter(axiosInstance as any, { delayResponse: 1000 });
 
-mock.onGet('/api/dashboard/books').reply(() => [
+mock.onGet('/dashboard/books').reply(() => [
   200,
   {
     code: 0,
@@ -285,8 +285,6 @@ mock.onGet('/api/dashboard/books').reply(() => [
   },
 ]);
 ```
-
-> **注意**：Mock 路径必须包含 axios 实例中配置的 baseURL。例如，如果 axios 实例的 baseURL 是 `/api`，那么 mock 路径应该是 `/api/dashboard/books` 而不是 `/dashboard/books`。
 
 ## 导入排序
 
