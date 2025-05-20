@@ -22,7 +22,7 @@ export const useDashboardStore = create<DashboardStore>((set) => ({
   setBooks: (books: Book[]) => set({ books }),
   fetchBooks: async () => {
     set({ loading: true });
-    const { books } = await apis.dashboard.getBooks();
-    set({ books, loading: false });
+    const { data: res } = await apis.dashboard.getBooks();
+    set({ books: res.books, loading: false });
   },
 }));

@@ -1,5 +1,5 @@
 import type { ApiModuleConfig } from '@/apis/createApis';
-import type { ApiMethod } from '@/apis/types';
+import type { ApiMethod, ApiResponse } from '@/apis/types';
 
 import type { BookInfo } from './interface';
 
@@ -8,7 +8,7 @@ import type { BookInfo } from './interface';
  */
 export interface DashboardApi {
   // 获取仪表盘数据
-  getBooks: ApiMethod<never, never, { books: BookInfo[] }>;
+  getBooks: ApiMethod<never, never, ApiResponse<{ books: BookInfo[] }>>;
 }
 
 // Dashboard模块API配置

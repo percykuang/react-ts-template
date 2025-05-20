@@ -16,3 +16,12 @@ import type { RequestOptions } from '@/http';
 export type ApiMethod<Params = any, Data = any, Response = any> = (
   options?: RequestOptions<Params, Data>
 ) => Promise<Response>;
+
+/**
+ * API响应结构
+ */
+export interface ApiResponse<T> {
+  code: number;
+  data: T;
+  message: string;
+}
